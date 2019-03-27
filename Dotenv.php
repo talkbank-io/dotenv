@@ -53,6 +53,8 @@ final class Dotenv
                 throw new PathException($path);
             }
 
+            // new version
+
             $this->populate($this->parse(file_get_contents($path), $path));
         }
     }
